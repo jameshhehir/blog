@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+
+  {%- include head.html -%}
+
+  <body>
+
+
+    <div class="sidebar">
+        <div class="sidebar_info">
+            <h2 style="padding: 0px 8px 0px 16px;"><b>Jimmy Hehir 💻</b></h2>
+            <p style="padding: 0px 8px 0px 16px;">Software Developer</p>
+        </div>
+        <a href="https://www.jimmyhehir.info/#about">About</a>
+        <a href="https://www.jimmyhehir.info/#github">Github</a>
+        <a href="https://www.jimmyhehir.info/blog">Blog</a>
+        <a href="https://www.jimmyhehir.info/#contact">Contact</a>
+    </div>
+
+    <main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        {{ content }}
+      </div>
+    </main>
+
+    {%- include footer.html -%}
+
+  </body>
+
+</html>
